@@ -1,246 +1,68 @@
+<!DOCTYPE html>
 <html>
  <head>
-  <title>
-   Motorsport News
-  </title>
+  <title>Motorsport News</title>
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&amp;display=swap" rel="stylesheet"/>
-  <style>
-   body {
-            font-family: 'Roboto', sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f5f5f5;
-        }
-        .header {
-            background-color: #000;
-            color: #fff;
-            padding: 10px 20px;
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-        }
-        .header .logo {
-            font-size: 24px;
-            font-weight: bold;
-            color: #ffcc00;
-        }
-        .header nav a {
-            color: #fff;
-            margin: 0 10px;
-            text-decoration: none;
-            font-weight: bold;
-        }
-        .header nav a:hover {
-            text-decoration: underline;
-        }
-        .content {
-            padding: 20px;
-        }
-        .content .category {
-            font-size: 14px;
-            color: #333;
-            font-weight: bold;
-            margin-bottom: 10px;
-        }
-        .content .title {
-            font-size: 36px;
-            font-weight: bold;
-            margin-bottom: 10px;
-        }
-        .content .subtitle {
-            font-size: 18px;
-            color: #666;
-            margin-bottom: 20px;
-        }
-        .content .authors {
-            font-size: 14px;
-            color: #007bff;
-            margin-bottom: 10px;
-        }
-        .content .date {
-            font-size: 14px;
-            color: #999;
-            margin-bottom: 20px;
-        }
-        .content .image-container {
-            text-align: center;
-            margin-bottom: 20px;
-        }
-        .content .image-container img {
-            max-width: 100%;
-            height: auto;
-            border: 5px solid #ffcc00;
-        }
-        .content .article-text {
-            font-size: 16px;
-            color: #333;
-            line-height: 1.6;
-        }
-        .content .article-text a {
-            color: #007bff;
-            text-decoration: none;
-        }
-        .content .article-text a:hover {
-            text-decoration: underline;
-        }
-        .sidebar {
-            background-color: #fff;
-            padding: 20px;
-            margin-top: 20px;
-        }
-        .sidebar .advertisement {
-            background-color: #f5f5f5;
-            border: 1px solid #ddd;
-            text-align: center;
-            padding: 20px;
-            font-size: 14px;
-            color: #999;
-        }
-        .footer {
-            background-color: #000;
-            color: #fff;
-            text-align: center;
-            padding: 10px 20px;
-            margin-top: 20px;
-        }
-        @media (max-width: 768px) {
-            .header {
-                flex-direction: column;
-                align-items: flex-start;
-            }
-            .header nav {
-                margin-top: 10px;
-            }
-            .content .title {
-                font-size: 28px;
-            }
-            .content .subtitle {
-                font-size: 16px;
-            }
-        }
-  </style>
+  <link rel="stylesheet" href="styles.css">
  </head>
  <body>
   <div class="header">
-   <div class="logo">
-    motorsport
-   </div>
+   <div class="logo">OMKU</div>
    <nav>
-    <a href="#">
-     FORMULA 1
-    </a>
-    <a href="#">
-     MOTOGP
-    </a>
-    <a href="#">
-     WORLD SUPERBIKE
-    </a>
-    <a href="#">
-     FORMULA E
-    </a>
-    <a href="#">
-     WRC
-    </a>
-    <a href="#">
-     MOTOGP
-    </a>
-    <a href="#">
-     WSBK
-    </a>
-    <a href="#">
-     PEMBALAP INDONESIA
-    </a>
-    <a href="#">
-     MOBIL
-    </a>
-    <a href="#">
-     ESPORTS
-    </a>
-    <a href="#">
-     OPEN WHEEL
-    </a>
-    <a href="#">
-     MOTOR
-    </a>
-    <a href="#">
-     SEMUA KEJUARAAN
-    </a>
+    <a href="#">FORMULA 1</a>
+    <a href="#">MOTOGP</a>
+    <a href="#">WORLD SUPERBIKE</a>
+    <a href="#">FORMULA E</a>
+    <a href="#">WRC</a>
+    <a href="#">PEMBALAP INDONESIA</a>
+    <a href="#">MOBIL</a>
+    <a href="#">ESPORTS</a>
+    <a href="#">OPEN WHEEL</a>
+    <a href="#">MOTOR</a>
+    <a href="#">SEMUA KEJUARAAN</a>
    </nav>
   </div>
-  <div class="content">
-   <div class="category">
-    FORMULA 1
-   </div>
-   <div class="title">
-    KUNJUNGAN PERTAMA HAMILTON KE PABRIK F1 FERRARI
-   </div>
-   <div class="subtitle">
-    Juara dunia F1 tujuh kali, Lewis Hamilton, akan segera mengendarai mobil single-seater Ferrari untuk pertama kalinya.
-   </div>
-   <div class="authors">
-    <a href="#">
-     Benjamin Vinel
-    </a>
-    <br/>
-    <a href="#">
-     Franco Nugnes
-    </a>
+  <div class="container">
+   <div class="content">
+    <div class="category">FORMULA 1</div>
+    <h1 class="title">KUNJUNGAN PERTAMA HAMILTON KE PABRIK F1 FERRARI</h1>
+    <div class="subtitle">Juara dunia F1 tujuh kali, Lewis Hamilton, akan segera mengendarai mobil single-seater Ferrari untuk pertama kalinya.</div>
+    <div class="authors">
+     <a href="#">Benjamin Vinel</a><br/>
+     <a href="#">Franco Nugnes</a>
     </div>
-    <div class="date">
-    21 Jan 2025, 07:00
-   </div>
-   <div class="image-container">
-    <img src="lewis-hamilton-ferrari.webp" height="50%" width="50%"/>
-   </div>
-   <div class="article-text">
+    <div class="date">21 Jan 2025, 07:00</div>
+    <div class="image-container">
+     <img src="lewis-hamilton-ferrari.webp" alt="Lewis Hamilton at Ferrari F1 team">
+    </div>
+    <div class="article-text">
      <p>
-        <a href="#">
-         Lewis Hamilton
-        </a>
-        akan memulai debutnya di lintasan
-        <a href="#">
-         Ferrari
-        </a>
-        pada 22 Januari di sirkuit Fiorano, mengendarai mobil F1-75 untuk Formula 1 2022, demikian diketahui Motorsport.com.
-       </p>
-       <p>
-        Bergabung dengan
-        <a href="#">
-         Charles Leclerc
-        </a>
-        di Scuderia untuk kampanye mendatang setelah menghabiskan 12 tahun terakhir di
-        <a href="#">
-         Mercedes
-        </a>
-        , Hamilton pergi ke Maranello pada Senin (20/1/2025) pagi, untuk mempersiapkan balapan perdananya dengan warna merah.
-       </p>
-       <p>
-        Pilot asal Inggris telah berkenalan dengan skuad barunya, bertemu dengan prinsipal Frederic Vasseur - yang ia kenal dengan baik setelah meraih titel beruntun untuk tim ASM/ART asal Prancis itu di F3 Euro Series dan GP2 pada 2005 dan 2006 - dan juga CEO Ferrari Benedetto Vigna dan wakil ketua Piero Ferrari. Pembalap asal Inggris ini juga bertemu dengan insinyur balap barunya, Riccardo Adami, yang sebelumnya bekerja dengan
-        <a href="#">
-         Carlos Sainz
-        </a>
-        .
-       </p>
-       <p>
-        Kursi baru Hamilton telah dipersiapkan menjelang balapan yang akan datang dan ia memastikan penyesuaian yang diminta pada setir telah dilakukan. Ia kemudian melakukan uji coba pertama untuk membiasakan diri dengan lingkungan barunya.
-       </p>
-       <p>
-        Pekerjaan lebih lanjut direncanakan sore ini dan besok, dengan apa yang digambarkan Ferrari sebagai "lebih banyak pertemuan dan pengarahan teknis" untuk membuat Hamilton siap untuk hari uji coba pertamanya di Fiorano.
-       </p>
-       <p>
-        "Ada beberapa hari yang Anda tahu Anda akan selamanya dan hari ini, hari ini adalah salah satunya," kata Hamilton.
-       </p>
-    </p>
+      <a href="#">Lewis Hamilton</a> akan memulai debutnya di lintasan <a href="#">Ferrari</a> pada 22 Januari di sirkuit Fiorano, mengendarai mobil F1-75 untuk Formula 1 2022, demikian diketahui Motorsport.com.
+     </p>
+     <p>
+      Bergabung dengan <a href="#">Charles Leclerc</a> di Scuderia untuk kampanye mendatang setelah menghabiskan 12 tahun terakhir di <a href="#">Mercedes</a>, Hamilton pergi ke Maranello pada Senin (20/1/2025) pagi, untuk mempersiapkan balapan perdananya dengan warna merah.
+     </p>
+     <p>
+      Pilot asal Inggris telah berkenalan dengan skuad barunya, bertemu dengan prinsipal Frederic Vasseur - yang ia kenal dengan baik setelah meraih titel beruntun untuk tim ASM/ART asal Prancis itu di F3 Euro Series dan GP2 pada 2005 dan 2006 - dan juga CEO Ferrari Benedetto Vigna dan wakil ketua Piero Ferrari. Pembalap asal Inggris ini juga bertemu dengan insinyur balap barunya, Riccardo Adami, yang sebelumnya bekerja dengan <a href="#">Carlos Sainz</a>.
+     </p>
+     <p>
+      Kursi baru Hamilton telah dipersiapkan menjelang balapan yang akan datang dan ia memastikan penyesuaian yang diminta pada setir telah dilakukan. Ia kemudian melakukan uji coba pertama untuk membiasakan diri dengan lingkungan barunya.
+     </p>
+     <p>
+      Pekerjaan lebih lanjut direncanakan sore ini dan besok, dengan apa yang digambarkan Ferrari sebagai "lebih banyak pertemuan dan pengarahan teknis" untuk membuat Hamilton siap untuk hari uji coba pertamanya di Fiorano.
+     </p>
+     <p>
+      "Ada beberapa hari yang Anda tahu Anda akan selamanya dan hari ini, hari ini adalah salah satunya," kata Hamilton.
+     </p>
+    </div>
    </div>
-  </div>
-  <div class="sidebar">
-   <div class="advertisement">
-    ADVERTISEMENT
+   <div class="sidebar">
+    <div class="advertisement">ADVERTISEMENT</div>
    </div>
   </div>
   <div class="footer">
-   © 2025 Motorsport. All rights reserved.
+   &copy; 2025 Motorsport. All rights reserved.
   </div>
  </body>
 </html>
